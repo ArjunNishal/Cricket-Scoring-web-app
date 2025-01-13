@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Home",
+    "link": "/",
+    "image": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": 2,
+    "name": "Match Center",
+    "link": "/match-center",
+    "image": {
+      "src": "",
+      "alt": ""
+    }
+  },
+  {
+    "id": 3,
+    "name": "Start a Match",
+    "link": "/match-center",
+    "image": {
+      "src": "",
+      "alt": ""
+    }
+  }
+]

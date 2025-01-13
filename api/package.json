@@ -1,0 +1,11 @@
+{
+  "name": "cricket_scoring_app",
+  "version": "1.0.0",
+  "description": "Cricekt scoring app for gully cricketers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arjun Nishal",
+  "license": "ISC"
+}
