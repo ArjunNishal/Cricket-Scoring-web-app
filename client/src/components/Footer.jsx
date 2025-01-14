@@ -14,7 +14,7 @@ const Footer = () => {
                 className="footer-logo"
                 alt="logo"
               />
-              <h3 className="custom-red">गली Cricket</h3>
+              <h3 className="custom-def">गली Cricket</h3>
             </div>
             <div className="col-12 col-lg-4 mb-3 text-lg-start text-center">
               <h5>Links</h5>
@@ -27,7 +27,7 @@ const Footer = () => {
                     >
                       <Link
                         to={`${el.link}`}
-                        className="nav-link custom-red p-0 "
+                        className="nav-link custom-def p-0 "
                       >
                         {el.image.src ? (
                           <img

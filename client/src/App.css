@@ -1,7 +1,8 @@
 :root {
-  --text-red: #bc2d2d;
+  --text-default: #706fd3;
   --cs-white: #ffffff;
-  --cs-blue: #0d6efd;
+  --cs-black: #000000;
+  --cs-blue: #706fd3;
   --cs-header-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   --cs-white-opacity: #ffffffb8;
@@ -9,8 +10,12 @@
 
 /* custom colors */
 
-.custom-red {
-  color: var(--text-red) !important;
+a {
+  color: var(--text-default);
+}
+
+.custom-def {
+  color: var(--text-default) !important;
 }
 
 /* header */
@@ -32,7 +37,7 @@ header {
 .navbar-brand h3 {
   font-family: cursive;
   font-weight: 500;
-  color: var(--text-red);
+  color: var(--text-default);
 }
 
 /* auth pages */
@@ -63,3 +68,52 @@ header {
 }
 
 /* ============================================== */
+
+/* match center */
+.match-center-breadcrumb {
+  background-image: url(../public/assets/images/beach2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.match-list-main-wrapper .nav-link {
+  color: var(--cs-black);
+}
+
+.breadcrumb-match-center-heading {
+  font-size: 37px;
+  font-weight: 700;
+  color: var(--cs-white);
+}
+
+.match-list-main-wrapper .nav-tabs {
+  border-bottom: none;
+}
+.match-list-main-wrapper .nav-tabs .nav-link.active {
+  border: 2px solid var(--text-default);
+  border-bottom: none;
+  color: var(--text-default);
+}
+.match-list-main-wrapper .nav-tabs .nav-link {
+  border-bottom: 2px solid var(--text-default);
+}
+
+.match-list-tabs .tab-pane {
+  border: 2px solid var(--cs-blue);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+/* ============================================== */
+
+/* match-card */
+.match-card-team-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  object-fit: cover;
+  
+}
+
+/* ================================================= */

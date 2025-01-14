@@ -27,7 +27,7 @@ const Navbar = () => {
                     <li key={index}>
                       <Link
                         to={`${el.link}`}
-                        className="nav-link custom-red px-2 "
+                        className="nav-link custom-def px-2 "
                       >
                         {el.image.src ? (
                           <img
@@ -102,7 +102,7 @@ const Navbar = () => {
                       <li className="nav-item" key={index}>
                         <Link
                           to={`${el.link}`}
-                          className="nav-link text-center fw-medium custom-red"
+                          className="nav-link text-center fw-medium custom-def"
                         >
                           {el.image.src ? (
                             <img
