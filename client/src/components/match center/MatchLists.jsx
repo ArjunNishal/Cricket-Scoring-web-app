@@ -15,22 +15,6 @@ const MatchLists = () => {
             <ul className="nav nav-tabs nav-fill" id="myTab" role="tablist">
               <li className="nav-item" role="presentation">
                 <button
-                  className={`nav-link ${activeTab === "live" && "active"}`}
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#home-tab-pane"
-                  type="button"
-                  role="tab"
-                  aria-controls="home-tab-pane"
-                  aria-selected="true"
-                  onClick={() => setActiveTab("live")}
-                >
-                  <span class="badge rounded-pill text-bg-danger">Live</span>{" "}
-                  <span className="d-lg-inline-block d-none">Matches</span>
-                </button>
-              </li>
-              <li className="nav-item" role="presentation">
-                <button
                   className={`nav-link ${activeTab === "today" && "active"}`}
                   id="profile-tab"
                   data-bs-toggle="tab"
@@ -42,6 +26,22 @@ const MatchLists = () => {
                   onClick={() => setActiveTab("today")}
                 >
                   Today's{" "}
+                  <span className="d-lg-inline-block d-none">Matches</span>
+                </button>
+              </li>
+              <li className="nav-item" role="presentation">
+                <button
+                  className={`nav-link ${activeTab === "live" && "active"}`}
+                  id="home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#home-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="home-tab-pane"
+                  aria-selected="true"
+                  onClick={() => setActiveTab("live")}
+                >
+                  <span class="badge rounded-pill text-bg-danger">Live</span>{" "}
                   <span className="d-lg-inline-block d-none">Matches</span>
                 </button>
               </li>
@@ -86,7 +86,7 @@ const MatchLists = () => {
                 aria-labelledby="profile-tab"
                 tabIndex={0}
               >
-                today
+                <LiveMatches />
               </div>
               <div
                 className={`tab-pane fade  ${
@@ -98,7 +98,7 @@ const MatchLists = () => {
                 aria-labelledby="contact-tab"
                 tabIndex={0}
               >
-                yesterday
+                <LiveMatches />
               </div>
             </div>
           </div>

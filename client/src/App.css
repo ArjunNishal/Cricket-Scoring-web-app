@@ -12,6 +12,7 @@
 
 a {
   color: var(--text-default);
+  text-decoration: none;
 }
 
 .custom-def {
@@ -88,32 +89,86 @@ header {
 }
 
 .match-list-main-wrapper .nav-tabs {
-  border-bottom: none;
-}
-.match-list-main-wrapper .nav-tabs .nav-link.active {
-  border: 2px solid var(--text-default);
-  border-bottom: none;
-  color: var(--text-default);
+  /* border-bottom: none; */
+  border-color: var(--cs-blue);
 }
 .match-list-main-wrapper .nav-tabs .nav-link {
-  border-bottom: 2px solid var(--text-default);
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: var(--cs-blue);
+}
+.match-list-main-wrapper .nav-tabs .nav-link.active {
+  /* border: none; */
+
+  border-bottom: 4px solid var(--text-default);
+  color: var(--text-default);
 }
 
 .match-list-tabs .tab-pane {
-  border: 2px solid var(--cs-blue);
-  border-top: none;
-  border-radius: 0 0 5px 5px;
+  /* border: 2px solid var(--cs-blue); */
+  /* border-top: none; */
+  /* border-radius: 0 0 5px 5px; */
 }
 
 /* ============================================== */
 
 /* match-card */
 .match-card-team-logo {
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 40px;
   border-radius: 2px;
   object-fit: cover;
-  
 }
 
+.match-card-wrapper {
+  background-image: url(../public/assets/images/versus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  scale: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.match-card-wrapper:hover {
+  scale: 1.01;
+  box-shadow: 0 0px 13px var(--cs-blue);
+}
+
+.overs-matchcard {
+  font-size: 14px;
+}
+
+.team-matchcard {
+  font-weight: bold;
+}
+
+.match-card-live-indicator {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ================================================= */
+
+/* match-details */
+.match-summary-banner {
+  background-image: url(../public/assets/images/versus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.match-sum-banner-team-logo {
+  width: 30%;
+  border-radius: 10px;
+}
+
+.match-sum-heading{
+
+  font-weight: bold;
+}
 /* ================================================= */

@@ -10,6 +10,7 @@ import MatchCenter from "./pages/MatchCenter";
 import Startmatch from "./pages/Startmatch";
 import Leaderboards from "./pages/Leaderboards";
 import Register from "./pages/Register";
+import MatchSummary from "./pages/MatchSummary";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
           {/* Match pages */}
           <Route path="/match-center" element={<MatchCenter />} />
           <Route path="/match" element={<Startmatch />} />{" "}
+          <Route path="/match-summary" element={<MatchSummary />} />
           {/* leaderboards pages */}
           <Route path="/leaderboards" element={<Leaderboards />} />
         </Routes>
