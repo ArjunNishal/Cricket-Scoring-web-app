@@ -17,13 +17,23 @@
       "alt": ""
     }
   },
+
   {
     "id": 3,
-    "name": "Start a Match",
-    "link": "/match-center",
+    "name": "Leaderboards",
+    "link": "/leaderboards",
     "image": {
       "src": "",
       "alt": ""
+    }
+  },
+  {
+    "id": 4,
+    "name": "Start a Match",
+    "link": "/match",
+    "image": {
+      "src": "assets/icons/wicket.png",
+      "alt": "wickets"
     }
   }
 ]

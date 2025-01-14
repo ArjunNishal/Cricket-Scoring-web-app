@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   return (
@@ -7,9 +8,10 @@ const LoginForm = () => {
         <div className="row align-items-center g-lg-5 py-5">
           <div className="col-lg-7 text-center text-lg-start">
             <h1 className="display-4 fw-bold lh-1 text-body-emphasis mb-3">
-              Vertically centered hero sign-up form
+              <small className="">Login to your</small> <br />
+              <span className="text-primary">Dressing room</span>
             </h1>
-            <p className="col-lg-10 fs-4">
+            <p className="col-lg-10 fs-4 d-lg-block d-none">
               Below is an example form built entirely with Bootstrap’s form
               controls. Each required form group has a validation state that can
               be triggered by attempting to submit the form without completing
@@ -17,15 +19,16 @@ const LoginForm = () => {
             </p>
           </div>
           <div className="col-md-10 mx-auto col-lg-5">
-            <form className="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form className="p-4 login-form p-md-5 border rounded-3 bg-body-tertiary">
               <div className="form-floating mb-3">
                 <input
-                  type="email"
+                  type="text"
                   className="form-control"
                   id="floatingInput"
-                  placeholder="name@example.com"
+                  placeholder="Email / Username"
+                  required
                 />
-                <label htmlFor="floatingInput">Email address</label>
+                <label htmlFor="floatingInput">Email / Username</label>
               </div>
               <div className="form-floating mb-3">
                 <input
@@ -33,6 +36,7 @@ const LoginForm = () => {
                   className="form-control"
                   id="floatingPassword"
                   placeholder="Password"
+                  required
                 />
                 <label htmlFor="floatingPassword">Password</label>
               </div>
@@ -43,12 +47,17 @@ const LoginForm = () => {
                 </label>
               </div>
               <button className="w-100 btn btn-lg btn-primary" type="submit">
-                Sign up
+                Login
               </button>
               <hr className="my-4" />
-              <small className="text-body-secondary">
-                By clicking Sign up, you agree to the terms of use.
-              </small>
+              <div className="text-center">
+                <small className="text-body-secondary">
+                  Don't have an account?&nbsp;
+                </small>
+                <Link className="text-decoration-none" to={`/register`}>
+                  Sign up
+                </Link>
+              </div>
             </form>
           </div>
         </div>

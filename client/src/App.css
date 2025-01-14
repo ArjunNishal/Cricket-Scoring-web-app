@@ -1,3 +1,20 @@
+:root {
+  --text-red: #bc2d2d;
+  --cs-white: #ffffff;
+  --cs-blue: #0d6efd;
+  --cs-header-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  --cs-white-opacity: #ffffffb8;
+}
+
+/* custom colors */
+
+.custom-red {
+  color: var(--text-red) !important;
+}
+
+/* header */
+
 .nav-logo {
   width: 100%;
   max-height: 30px;
@@ -5,16 +22,44 @@
 }
 
 header {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  box-shadow: var(--cs-header-shadow);
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: var(--cs-white);
   z-index: 10;
 }
 
-.navbar-brand h3{
+.navbar-brand h3 {
   font-family: cursive;
   font-weight: 500;
-  color: #bc2d2d;
+  color: var(--text-red);
 }
+
+/* auth pages */
+
+.register-form .form-control:focus,
+.login-form .form-control:focus {
+  border-color: var(--cs-blue) !important;
+}
+/* ============================================ */
+
+/* footer */
+.footer-logo {
+  max-height: 60px;
+}
+/* ============================================= */
+
+/* home */
+.home-cta {
+  background-image: url(../public/assets/images/ground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-cta-box {
+  background-color: var(--cs-white-opacity);
+}
+
+/* ============================================== */

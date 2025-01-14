@@ -2,15 +2,16 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import LoginForm from "../components/Auth/LoginForm";
 import Footer from "../components/Footer";
+import RegisterForm from "../components/Auth/RegisterForm";
 
-const Login = () => {
+const Register = () => {
   return (
-    <>
+    <div>
       <Navbar />
-      <LoginForm />
+      <RegisterForm />
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default Login;
+export default Register;

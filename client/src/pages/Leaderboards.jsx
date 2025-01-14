@@ -1,16 +1,15 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import LoginForm from "../components/Auth/LoginForm";
 import Footer from "../components/Footer";
 
-const Login = () => {
+const Leaderboards = () => {
   return (
-    <>
+    <div>
       <Navbar />
-      <LoginForm />
+      <h2>Leaderboards</h2>
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default Login;
+export default Leaderboards;

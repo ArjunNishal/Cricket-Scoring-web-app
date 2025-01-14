@@ -1,16 +1,16 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import LoginForm from "../components/Auth/LoginForm";
 import Footer from "../components/Footer";
 
-const Login = () => {
+const MatchCenter = () => {
   return (
-    <>
+    <div>
       <Navbar />
-      <LoginForm />
+      <h2>Match center</h2>
+                    
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default Login;
+export default MatchCenter;
