@@ -20,7 +20,9 @@ const MatchCard = () => {
                   <div className="text-center">
                     <img
                       className="match-card-team-logo me-1"
-                      src="assets/images/ground.jpg"
+                      src={`assets/images/${
+                        index === 0 ? "teamA.png" : "teamB.png"
+                      }`}
                       alt="team"
                     />
                   </div>

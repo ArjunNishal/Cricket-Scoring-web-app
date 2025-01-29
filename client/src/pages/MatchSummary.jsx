@@ -8,7 +8,7 @@ const MatchSummary = () => {
     <>
       <Navbar />
       <MatchDetails />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

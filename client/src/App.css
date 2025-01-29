@@ -6,6 +6,9 @@
   --cs-header-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   --cs-white-opacity: #ffffffb8;
+  --cs-grey-text: #636363;
+
+  --cs-grey-bg: #dfdfdf;
 }
 
 /* custom colors */
@@ -155,20 +158,167 @@ header {
 
 /* match-details */
 .match-summary-banner {
-  background-image: url(../public/assets/images/versus.png);
+  /* background-image: url(../public/assets/images/vs.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background-size: contain; */
+  /* color: white; */
+  background-color: var(--cs-white);
+  border-radius: 30px;
 }
 
 .match-sum-banner-team-logo {
-  width: 30%;
+  width: 100%;
   border-radius: 10px;
+  max-height: 70px;
+  object-fit: contain;
 }
 
-.match-sum-heading{
-
+.match-sum-heading {
   font-weight: bold;
+  color: var(--text-default);
 }
+
+.match-page-main {
+  background-image: url(../public/assets/images/ball-red.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.match-sum-vs-text {
+  font-size: x-large;
+}
+
+.over-ball {
+  padding: 0px 4px;
+  border-radius: 3px;
+  background-color: var(--cs-grey-bg);
+  margin: 0px 3px;
+}
+
+.over-start {
+  padding: 0 3px 0 2px;
+  margin: 0 3px 0 0;
+  border-right: 1px solid var(--cs-grey-bg);
+}
+
+.over-balls-wrapper {
+  overflow: scroll;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.over-balls-wrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.score-tabs-nav .nav-link.active {
+  border-bottom: 2px solid var(--cs-blue);
+  color: var(--text-default);
+  font-weight: 700;
+}
+.score-tabs-nav .nav-link {
+  border-bottom: 1px solid var(--cs-grey-bg);
+  color: var(--cs-grey-text);
+}
+
+.scorecard-headings {
+  width: 30px;
+  text-align: center;
+}
+
+.fall-wicket-detail p {
+  margin-bottom: 0;
+}
+
+.fall-wicket-detail .fall-wicket-score {
+  font-weight: 500;
+}
+
 /* ================================================= */
+
+/* ====================================================== */
+/* ======== MOBILE CSS ================================== */
+/* ====================================================== */
+
+@media (max-width: 576px) {
+  .match-sum-heading {
+    font-size: 15px;
+  }
+
+  .scorecard-batter-div p {
+    font-size: 14px;
+  }
+  .scorecard-batter-div small {
+    font-size: 10px;
+  }
+
+  .fall-of-wickets {
+    font-size: 13px;
+  }
+
+  .match-summary-banner {
+    border-radius: 0px;
+  }
+
+  .match-sum-score {
+    font-size: 16px;
+  }
+
+  .match-sum-overs {
+    font-size: 14px;
+  }
+
+  .match-sum-banner-team-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  .over-ball {
+    padding: 0px 4px;
+    border-radius: 3px;
+    background-color: var(--cs-grey-bg);
+    margin: 0px 3px;
+  }
+
+  .over-start {
+    padding: 0 3px 0 2px;
+    margin: 0 3px 0 0;
+    border-right: 1px solid var(--cs-grey-bg);
+  }
+
+  .over-balls-wrapper {
+    overflow: scroll;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .over-balls-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .current-players-main {
+    font-size: 11px;
+  }
+  .score-tabs-nav .nav-link.active {
+    border-bottom: 2px solid var(--cs-blue);
+    color: var(--text-default);
+  }
+  .score-tabs-nav .nav-link {
+    border-bottom: 1px solid var(--cs-grey-bg);
+    color: var(--cs-grey-text);
+  }
+
+  .batter-row {
+    font-size: 13px;
+  }
+} /* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
