@@ -1,13 +1,18 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChooseTeams from "../components/Match-Start/ChooseTeams";
 
 const Startmatch = () => {
   return (
     <div>
-      <Navbar />
-      <h1>Start new match</h1>
-      <Footer />
+      {/* <div className="d-sm-block d-none">
+        <Navbar />
+      </div> */}
+      <ChooseTeams />
+      {/* <div className="d-sm-block d-none">
+        <Footer />
+      </div> */}
     </div>
   );
 };

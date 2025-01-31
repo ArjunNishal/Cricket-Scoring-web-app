@@ -239,6 +239,78 @@ header {
   font-weight: 500;
 }
 
+.select-team-icon {
+  font-size: 35px;
+
+  border: 1px dashed var(--cs-black);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose-team-heading {
+  box-shadow: var(--cs-header-shadow);
+}
+
+#startmatchCarousel .carousel-item {
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+.search-team-input {
+  border: none;
+}
+.search-team-input:focus {
+  box-shadow: none !important;
+}
+
+.search-team-input-group .input-group-text {
+  border: none;
+  background: none;
+}
+
+.search-team-input-group {
+  border-bottom: 1px solid var(--cs-blue);
+  /* border-radius: 5px; */
+}
+
+.searched-team-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.searched-team-item {
+  border: 1px solid var(--cs-blue);
+  margin: 5px 0;
+  display: block;
+  height: 100%;
+}
+
+.select-team-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+}
+
+.sticky-head-select-team {
+  position: sticky;
+  top: 0;
+  background-color: var(--cs-white);
+  z-index: 1;
+}
+
+.add-new-team-modal-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
 /* ================================================= */
 
 /* ====================================================== */
