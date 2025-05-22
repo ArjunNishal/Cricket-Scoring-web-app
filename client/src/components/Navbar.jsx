@@ -13,7 +13,7 @@ const Navbar = () => {
             {/* navbar brand */}
             <Link className="navbar-brand d-flex" to="/">
               <img
-                src="assets/images/logo.png"
+                src="assets/images/logo.webp"
                 className="nav-logo"
                 alt="logo"
               />
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                   <Link className="navbar-brand d-flex" to="/">
                     <img
-                      src="assets/images/logo.png"
+                      src="assets/images/logo.webp"
                       className="nav-logo"
                       alt="logo"
                     />

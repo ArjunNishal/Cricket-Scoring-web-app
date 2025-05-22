@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
         <div className="col-12 col-sm-12 col-lg-6">
           <img
-            src="assets/images/ballsketch.png"
+            src="assets/images/ballsketch.webp"
             className="d-block mx-lg-auto img-fluid"
             alt="Bootstrap Themes"
             width={700}

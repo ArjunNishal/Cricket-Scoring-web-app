@@ -2,7 +2,7 @@ import React from "react";
 import CreateNewTeamForm from "../team/CreateNewTeamForm";
 import { useNavigate } from "react-router-dom";
 
-const AddNewTeam = () => {
+const TeamCreated = () => {
   const navigate = useNavigate();
   return (
     <div className="add-new-team-main d-flex align-items-center justify-content-center">
@@ -14,7 +14,7 @@ const AddNewTeam = () => {
                 <i className="fa-solid fa-chevron-left"></i>
               </button>
             </div>
-            <div className="h4 mb-0">Add New Team</div>
+            <div className="h4 mb-0">Team Created</div>
           </div>
         </div>
         <CreateNewTeamForm startmatch={true} />
@@ -23,4 +23,4 @@ const AddNewTeam = () => {
   );
 };
 
-export default AddNewTeam;
+export default TeamCreated;

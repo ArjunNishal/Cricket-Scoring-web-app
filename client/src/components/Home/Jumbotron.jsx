@@ -9,7 +9,7 @@ const Jumbotron = () => {
           <img
             className="bi mt-4 mb-3"
             style={{ color: "var(--bs-indigo)" }}
-            src="assets/images/logo.png"
+            src="assets/images/logo.webp"
             height={100}
           ></img>
           <h1 className="text-body-emphasis">Stop all Fights</h1>

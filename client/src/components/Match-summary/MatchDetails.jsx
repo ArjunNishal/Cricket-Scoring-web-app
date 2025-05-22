@@ -20,7 +20,7 @@ const MatchDetails = () => {
               <div className="col-5">
                 <div className="text-center p-sm-4">
                   <img
-                    src="assets/images/teamA.png"
+                    src="assets/images/teamA.webp"
                     className="match-sum-banner-team-logo mb-2"
                     alt="team logo"
                   />
@@ -34,7 +34,7 @@ const MatchDetails = () => {
               </div>
               <div className="col-2 text-center">
                 {/* <img
-                  src="assets/images/vs.png"
+                  src="assets/images/vs.webp"
                   className="match-sum-vs-img"
                   alt=""
                 /> */}
@@ -43,7 +43,7 @@ const MatchDetails = () => {
               <div className="col-5">
                 <div className="text-center p-sm-4">
                   <img
-                    src="assets/images/teamB.png"
+                    src="assets/images/teamB.webp"
                     className="match-sum-banner-team-logo mb-2"
                     alt="team logo"
                   />

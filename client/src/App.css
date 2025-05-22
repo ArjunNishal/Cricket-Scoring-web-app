@@ -7,7 +7,7 @@
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   --cs-white-opacity: #ffffffb8;
   --cs-grey-text: #636363;
-
+  --cs-green-bg-btn: linear-gradient(45deg, #28a745, #218838);
   --cs-grey-bg: #dfdfdf;
 }
 
@@ -60,7 +60,7 @@ header {
 
 /* home */
 .home-cta {
-  background-image: url(../public/assets/images/ground.jpg);
+  background-image: url(../public/assets/images/ground.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -75,7 +75,7 @@ header {
 
 /* match center */
 .match-center-breadcrumb {
-  background-image: url(../public/assets/images/beach2.jpg);
+  background-image: url(../public/assets/images/beach2.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,12 +109,6 @@ header {
   color: var(--text-default);
 }
 
-.match-list-tabs .tab-pane {
-  /* border: 2px solid var(--cs-blue); */
-  /* border-top: none; */
-  /* border-radius: 0 0 5px 5px; */
-}
-
 /* ============================================== */
 
 /* match-card */
@@ -126,7 +120,7 @@ header {
 }
 
 .match-card-wrapper {
-  background-image: url(../public/assets/images/versus.png);
+  background-image: url(../public/assets/images/versus.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,7 +152,7 @@ header {
 
 /* match-details */
 .match-summary-banner {
-  /* background-image: url(../public/assets/images/vs.png);
+  /* background-image: url(../public/assets/images/vs.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain; */
@@ -180,7 +174,7 @@ header {
 }
 
 .match-page-main {
-  background-image: url(../public/assets/images/ball-red.jpg);
+  background-image: url(../public/assets/images/ball-red.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,19 +235,27 @@ header {
 
 .select-team-icon {
   font-size: 35px;
-
-  border: 1px dashed var(--cs-black);
+  /* background-color: white; */
+  /* border: 1px dashed var(--cs-black); */
   border-radius: 50%;
   width: 60px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
 }
 
-.choose-team-heading {
+/* .choose-team-heading {
   box-shadow: var(--cs-header-shadow);
-}
+} */
 
 #startmatchCarousel .carousel-item {
   min-height: 100svh;
@@ -273,8 +275,36 @@ header {
 }
 
 .search-team-input-group {
-  border-bottom: 1px solid var(--cs-blue);
-  /* border-radius: 5px; */
+  /* background-color: var(--cs-white); */
+  /* background-color: red; */
+  padding: 2px;
+  border-radius: 30px;
+  background: rgba(9, 16, 66, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--cs-white);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+.search-team-input-group i {
+  color: var(--cs-white);
+}
+
+.search-team-input-group input,
+.search-team-input-group input:focus {
+  border-radius: 30px;
+  background-color: transparent;
+  color: var(--cs-white);
+}
+
+.search-team-input-group input::placeholder {
+  color: var(--cs-white-opacity);
+}
+
+.search-team .spinner-border {
+  border-color: var(--cs-white);
+  border-right-color: transparent;
 }
 
 .searched-team-item-img {
@@ -284,22 +314,54 @@ header {
 }
 
 .searched-team-item {
-  border: 1px solid var(--cs-blue);
+  /* border: 1px solid var(--cs-blue); */
   margin: 5px 0;
   display: block;
   height: 100%;
+  background: rgba(9, 16, 66, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  scale: 1;
+}
+
+.searched-team-item:hover {
+  scale: 1.01;
+  background: rgba(41, 48, 106, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: 0.2s all ease-in-out;
+}
+
+.searched-team-item p {
+  color: var(--cs-white);
+  font-weight: 600;
+}
+
+.select-team-main {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  /* background-color: red; */
+  background-image: url(../public/assets/images/stadium-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .select-team-wrapper {
   position: relative;
-  height: 100vh;
-  overflow: auto;
 }
 
 .sticky-head-select-team {
   position: sticky;
   top: 0;
-  background-color: var(--cs-white);
+
   z-index: 1;
 }
 
@@ -309,7 +371,101 @@ header {
   right: 20px;
 }
 
+.add-new-team-btn {
+  background: var(--cs-green-bg-btn);
+  border: none;
+  color: white;
+  /* font-size: 16px; */
+  font-weight: bold;
+  /* padding: 12px 24px; */
+  /* border-radius: 30px; */
+  /* cursor: pointer; */
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 8px; */
+}
 
+.add-new-team-btn i {
+  /* font-size: 18px; */
+  font-weight: bold;
+}
+
+.add-new-team-btn:hover {
+  background: linear-gradient(45deg, #218838, #1e7e34);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.add-new-team-btn:active {
+  transform: scale(0.98);
+}
+
+.add-new-team-main {
+  width: 100%;
+  height: 100vh;
+  background: url("../public/assets/images/stadium-bg.webp") no-repeat center
+    center;
+  background-size: cover;
+}
+
+/* Center the form */
+.add-new-team-inner {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+  /* background: white; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(9, 16, 66, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--cs-white);
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+  color: white;
+}
+
+.create-team-form input.form-input-add-new-team {
+  background: rgb(0 0 0 / 44%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.create-team-form .form-floating label {
+  color: white !important;
+}
+
+.create-team-form .form-floating label::after {
+  /* color: white !important; */
+  background-color: transparent !important;
+}
+
+.sticky-add-new-team-head .back-btn i {
+  color: white;
+}
+
+/* Remove background on mobile */
+@media (max-width: 768px) {
+  .add-new-team-main {
+    /* background: none; */
+    /* height: auto; */
+    padding: 20px;
+  }
+  .add-new-team-inner {
+    max-width: 100%;
+    box-shadow: none;
+  }
+}
 
 /* ================================================= */
 
@@ -394,3 +550,31 @@ header {
 } /* ====================================================== */
 /* ====================================================== */
 /* ====================================================== */
+
+/* DESKTOP CSS */
+
+.choose-team-main {
+  height: 100vh;
+  background-image: url(../public/assets/images/stadium-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.choose-team-wrapper {
+  border-radius: 20px;
+  /* background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+  color: var(--cs-white);
+}
+
+/* .choose-team-heading {
+} */
+
+@media (min-width: 768px) {
+}
+
+/* ======================================================= */

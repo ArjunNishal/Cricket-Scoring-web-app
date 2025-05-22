@@ -21,7 +21,7 @@ const MatchCard = () => {
                     <img
                       className="match-card-team-logo me-1"
                       src={`assets/images/${
-                        index === 0 ? "teamA.png" : "teamB.png"
+                        index === 0 ? "teamA.webp" : "teamB.webp"
                       }`}
                       alt="team"
                     />

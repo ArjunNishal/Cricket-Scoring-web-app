@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 col-lg-8 text-center">
               <img
-                src="assets/images/logo.png"
+                src="assets/images/logo.webp"
                 className="footer-logo"
                 alt="logo"
               />
