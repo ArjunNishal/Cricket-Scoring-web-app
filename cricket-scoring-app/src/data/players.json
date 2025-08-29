@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "team": "India",
+    "stats": {
+      "matches": 279,
+      "runs": 13027,
+      "wickets": 4,
+      "average": 57.32,
+      "strike_rate": 93.62
+    }
+  },
+  {
+    "id": 2,
+    "name": "Babar Azam",
+    "team": "Pakistan",
+    "stats": {
+      "matches": 100,
+      "runs": 5089,
+      "wickets": 0,
+      "average": 59.17,
+      "strike_rate": 89.24
+    }
+  },
+  {
+    "id": 3,
+    "name": "Pat Cummins",
+    "team": "Australia",
+    "stats": {
+      "matches": 75,
+      "runs": 547,
+      "wickets": 141,
+      "average": 28.54,
+      "strike_rate": 75.86
+    }
+  }
+]

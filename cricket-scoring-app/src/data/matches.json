@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "team1": "India",
+    "team2": "Australia",
+    "score1": "352/5",
+    "score2": "253/10",
+    "status": "Finished",
+    "date": "2023-09-27"
+  },
+  {
+    "id": 2,
+    "team1": "Pakistan",
+    "team2": "Sri Lanka",
+    "score1": "252/7",
+    "score2": "252/8",
+    "status": "Finished",
+    "date": "2023-09-14"
+  },
+  {
+    "id": 3,
+    "team1": "England",
+    "team2": "New Zealand",
+    "score1": "150/2",
+    "score2": "",
+    "status": "Live",
+    "date": "2023-10-05"
+  }
+]
